@@ -37,7 +37,7 @@ public class HoleSurfaceAdapter extends AbstractThematicSurfaceAdapter<HoleSurfa
     }
 
     @Override
-    public Element createElement(HoleSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(HoleSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TRANSPORTATION_NAMESPACE, "HoleSurface");
     }
 

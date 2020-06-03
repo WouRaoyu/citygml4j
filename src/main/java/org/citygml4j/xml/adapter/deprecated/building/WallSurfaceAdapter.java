@@ -53,7 +53,7 @@ public class WallSurfaceAdapter extends AbstractBoundarySurfaceAdapter<WallSurfa
     }
 
     @Override
-    public Element createElement(WallSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(WallSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBuildingNamespace(namespaces), "WallSurface");
     }
 

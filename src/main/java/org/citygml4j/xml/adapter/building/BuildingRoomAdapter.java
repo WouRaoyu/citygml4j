@@ -94,7 +94,7 @@ public class BuildingRoomAdapter extends AbstractUnoccupiedSpaceAdapter<Building
     }
 
     @Override
-    public Element createElement(BuildingRoom object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BuildingRoom object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String buildingNamespace = CityGMLSerializerHelper.getBuildingNamespace(namespaces);
         return CityGMLConstants.CITYGML_3_0_BUILDING_NAMESPACE.equals(buildingNamespace) ?
                 Element.of(buildingNamespace, "BuildingRoom") :

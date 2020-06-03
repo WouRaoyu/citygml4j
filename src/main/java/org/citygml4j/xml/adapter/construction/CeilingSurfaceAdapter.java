@@ -36,7 +36,7 @@ public class CeilingSurfaceAdapter extends AbstractConstructionSurfaceAdapter<Ce
     }
 
     @Override
-    public Element createElement(CeilingSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CeilingSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CONSTRUCTION_NAMESPACE, "CeilingSurface");
     }
 

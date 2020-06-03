@@ -49,7 +49,7 @@ public class RoomHeightAdapter implements ObjectBuilder<RoomHeight>, ObjectSeria
     }
 
     @Override
-    public Element createElement(RoomHeight object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(RoomHeight object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_BUILDING_NAMESPACE, "RoomHeight");
     }
 

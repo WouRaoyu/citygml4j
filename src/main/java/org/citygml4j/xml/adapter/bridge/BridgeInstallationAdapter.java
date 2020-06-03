@@ -103,7 +103,7 @@ public class BridgeInstallationAdapter extends AbstractInstallationAdapter<Bridg
     }
 
     @Override
-    public Element createElement(BridgeInstallation object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BridgeInstallation object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String bridgeNamespace = CityGMLSerializerHelper.getBridgeNamespace(namespaces);
         return !CityGMLConstants.CITYGML_3_0_BRIDGE_NAMESPACE.equals(bridgeNamespace)
                 && object.getRelationToConstruction() == RelationToConstruction.INSIDE ?

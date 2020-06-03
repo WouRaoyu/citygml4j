@@ -39,7 +39,7 @@ public class UriAttributeAdapter extends AbstractGenericAttributeAdapter<UriAttr
     }
 
     @Override
-    public Element createElement(UriAttribute object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(UriAttribute object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String genericsNamespace = CityGMLSerializerHelper.getGenericsNamespace(namespaces);
         return CityGMLConstants.CITYGML_3_0_GENERICS_NAMESPACE.equals(genericsNamespace) ?
                 Element.of(genericsNamespace, "UriAttribute") :

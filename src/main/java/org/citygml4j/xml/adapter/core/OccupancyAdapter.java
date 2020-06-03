@@ -45,7 +45,7 @@ public class OccupancyAdapter implements ObjectBuilder<Occupancy>, ObjectSeriali
     }
 
     @Override
-    public Element createElement(Occupancy object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Occupancy object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CORE_NAMESPACE, "Occupancy");
     }
 

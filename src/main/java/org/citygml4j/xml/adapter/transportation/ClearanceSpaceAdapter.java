@@ -46,7 +46,7 @@ public class ClearanceSpaceAdapter extends AbstractUnoccupiedSpaceAdapter<Cleara
     }
 
     @Override
-    public Element createElement(ClearanceSpace object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ClearanceSpace object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TRANSPORTATION_NAMESPACE, "ClearanceSpace");
     }
 

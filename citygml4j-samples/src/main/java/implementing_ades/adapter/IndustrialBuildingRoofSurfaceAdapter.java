@@ -58,7 +58,7 @@ public class IndustrialBuildingRoofSurfaceAdapter extends CompositeObjectAdapter
     }
 
     @Override
-    public Element createElement(IndustrialBuildingRoofSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(IndustrialBuildingRoofSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(TestADEModule.NAMESPACE_1_0, "IndustrialBuildingRoofSurface");
     }
 

@@ -89,7 +89,7 @@ public class X3DMaterialAdapter extends AbstractSurfaceDataAdapter<X3DMaterial> 
     }
 
     @Override
-    public Element createElement(X3DMaterial object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(X3DMaterial object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getAppearanceNamespace(namespaces), "X3DMaterial");
     }
 

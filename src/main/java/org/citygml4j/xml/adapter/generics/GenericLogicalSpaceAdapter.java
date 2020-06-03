@@ -45,7 +45,7 @@ public class GenericLogicalSpaceAdapter extends AbstractLogicalSpaceAdapter<Gene
     }
 
     @Override
-    public Element createElement(GenericLogicalSpace object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(GenericLogicalSpace object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_GENERICS_NAMESPACE, "GenericLogicalSpace");
     }
 

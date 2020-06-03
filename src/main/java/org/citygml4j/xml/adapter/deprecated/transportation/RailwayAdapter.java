@@ -53,7 +53,7 @@ public class RailwayAdapter extends AbstractTransportationObjectAdapter<Railway>
     }
 
     @Override
-    public Element createElement(Railway object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Railway object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTransportationNamespace(namespaces), "Railway");
     }
 

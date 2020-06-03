@@ -53,7 +53,7 @@ public class InteriorWallSurfaceAdapter extends AbstractBoundarySurfaceAdapter<I
     }
 
     @Override
-    public Element createElement(InteriorWallSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(InteriorWallSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBuildingNamespace(namespaces), "InteriorWallSurface");
     }
 

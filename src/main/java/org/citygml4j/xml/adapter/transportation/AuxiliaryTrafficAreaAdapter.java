@@ -80,7 +80,7 @@ public class AuxiliaryTrafficAreaAdapter extends AbstractThematicSurfaceAdapter<
     }
 
     @Override
-    public Element createElement(AuxiliaryTrafficArea object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(AuxiliaryTrafficArea object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTransportationNamespace(namespaces), "AuxiliaryTrafficArea");
     }
 

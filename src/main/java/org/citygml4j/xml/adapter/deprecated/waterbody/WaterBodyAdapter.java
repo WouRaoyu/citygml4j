@@ -96,7 +96,7 @@ public class WaterBodyAdapter extends AbstractCityObjectAdapter<WaterBody> {
     }
 
     @Override
-    public Element createElement(WaterBody object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(WaterBody object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getWaterBodyNamespace(namespaces), "WaterBody");
     }
 

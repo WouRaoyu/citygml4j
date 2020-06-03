@@ -118,7 +118,7 @@ public class SolitaryVegetationObjectAdapter extends AbstractVegetationObjectAda
     }
 
     @Override
-    public Element createElement(SolitaryVegetationObject object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(SolitaryVegetationObject object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getVegetationNamespace(namespaces), "SolitaryVegetationObject");
     }
 

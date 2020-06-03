@@ -65,7 +65,7 @@ public class TINReliefAdapter extends AbstractReliefComponentAdapter<TINRelief> 
     }
 
     @Override
-    public Element createElement(TINRelief object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TINRelief object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getReliefNamespace(namespaces), "TINRelief");
     }
 

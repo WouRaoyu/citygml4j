@@ -41,7 +41,7 @@ public class RoleAdapter extends AbstractGMLAdapter<Role> {
     }
 
     @Override
-    public Element createElement(Role object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Role object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CITYOBJECTGROUP_NAMESPACE, "Role");
     }
 

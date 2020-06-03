@@ -110,7 +110,7 @@ public class PlantCoverAdapter extends AbstractVegetationObjectAdapter<PlantCove
     }
 
     @Override
-    public Element createElement(PlantCover object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(PlantCover object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getVegetationNamespace(namespaces), "PlantCover");
     }
 

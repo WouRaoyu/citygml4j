@@ -50,7 +50,7 @@ public class BuildingUnitElementAdapter implements ObjectBuilder<BuildingUnitEle
     }
 
     @Override
-    public Element createElement(BuildingUnitElement object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BuildingUnitElement object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(TestADEModule.NAMESPACE_1_0, "buildingUnit");
     }
 

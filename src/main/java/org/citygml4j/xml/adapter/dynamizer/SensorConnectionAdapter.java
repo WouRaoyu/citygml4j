@@ -78,7 +78,7 @@ public class SensorConnectionAdapter implements ObjectBuilder<SensorConnection>,
     }
 
     @Override
-    public Element createElement(SensorConnection object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(SensorConnection object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "SensorConnection");
     }
 

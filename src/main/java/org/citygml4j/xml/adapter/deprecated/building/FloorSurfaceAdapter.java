@@ -53,7 +53,7 @@ public class FloorSurfaceAdapter extends AbstractBoundarySurfaceAdapter<FloorSur
     }
 
     @Override
-    public Element createElement(FloorSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(FloorSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBuildingNamespace(namespaces), "FloorSurface");
     }
 

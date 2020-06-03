@@ -74,7 +74,7 @@ public class BuildingFurnitureAdapter extends AbstractFurnitureAdapter<BuildingF
     }
 
     @Override
-    public Element createElement(BuildingFurniture object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BuildingFurniture object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBuildingNamespace(namespaces), "BuildingFurniture");
     }
 

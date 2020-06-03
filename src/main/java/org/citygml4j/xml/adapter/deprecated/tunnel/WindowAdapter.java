@@ -46,7 +46,7 @@ public class WindowAdapter extends AbstractOpeningAdapter<WindowSurface> {
     }
 
     @Override
-    public Element createElement(WindowSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(WindowSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTunnelNamespace(namespaces), "Window");
     }
 

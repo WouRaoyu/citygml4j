@@ -46,7 +46,7 @@ public class MarkingAdapter extends AbstractThematicSurfaceAdapter<Marking> {
     }
 
     @Override
-    public Element createElement(Marking object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Marking object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TRANSPORTATION_NAMESPACE, "Marking");
     }
 

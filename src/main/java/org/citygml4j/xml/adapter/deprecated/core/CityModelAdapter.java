@@ -87,7 +87,7 @@ public class CityModelAdapter extends AbstractFeatureAdapter<CityModel> {
     }
 
     @Override
-    public Element createElement(CityModel object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CityModel object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getCoreNamespace(namespaces), "CityModel");
     }
 

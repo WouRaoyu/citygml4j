@@ -46,7 +46,7 @@ public class StoreyAdapter extends AbstractBuildingSubdivisionAdapter<Storey> {
     }
 
     @Override
-    public Element createElement(Storey object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Storey object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_BUILDING_NAMESPACE, "Storey");
     }
 

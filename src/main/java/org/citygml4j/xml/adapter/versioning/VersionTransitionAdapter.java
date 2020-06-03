@@ -63,7 +63,7 @@ public class VersionTransitionAdapter extends AbstractVersionTransitionAdapter<V
     }
 
     @Override
-    public Element createElement(VersionTransition object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(VersionTransition object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_VERSIONING_NAMESPACE, "VersionTransition");
     }
 

@@ -49,7 +49,7 @@ public class TexCoordGenAdapter extends AbstractTextureParameterizationAdapter<T
     }
 
     @Override
-    public Element createElement(TexCoordGen object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TexCoordGen object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getAppearanceNamespace(namespaces), "TexCoordGen");
     }
 

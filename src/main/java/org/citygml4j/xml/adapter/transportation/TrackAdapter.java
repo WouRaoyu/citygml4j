@@ -54,7 +54,7 @@ public class TrackAdapter extends AbstractTransportationSpaceAdapter<Track> {
     }
 
     @Override
-    public Element createElement(Track object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Track object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TRANSPORTATION_NAMESPACE, "Track");
     }
 

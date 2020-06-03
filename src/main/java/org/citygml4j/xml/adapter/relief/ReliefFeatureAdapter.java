@@ -71,7 +71,7 @@ public class ReliefFeatureAdapter extends AbstractSpaceBoundaryAdapter<ReliefFea
     }
 
     @Override
-    public Element createElement(ReliefFeature object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ReliefFeature object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getReliefNamespace(namespaces), "ReliefFeature");
     }
 

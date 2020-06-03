@@ -66,7 +66,7 @@ public class ImplicitGeometryAdapter extends AbstractGMLAdapter<ImplicitGeometry
     }
 
     @Override
-    public Element createElement(ImplicitGeometry object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ImplicitGeometry object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getCoreNamespace(namespaces), "ImplicitGeometry");
     }
 

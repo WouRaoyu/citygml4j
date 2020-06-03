@@ -69,7 +69,7 @@ public class AddressAdapter extends AbstractFeatureAdapter<Address> {
     }
 
     @Override
-    public Element createElement(Address object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Address object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getCoreNamespace(namespaces), "Address");
     }
 

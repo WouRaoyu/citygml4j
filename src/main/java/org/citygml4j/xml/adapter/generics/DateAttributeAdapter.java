@@ -43,7 +43,7 @@ public class DateAttributeAdapter extends AbstractGenericAttributeAdapter<DateAt
     }
 
     @Override
-    public Element createElement(DateAttribute object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(DateAttribute object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String genericsNamespace = CityGMLSerializerHelper.getGenericsNamespace(namespaces);
         return CityGMLConstants.CITYGML_3_0_GENERICS_NAMESPACE.equals(genericsNamespace) ?
                 Element.of(genericsNamespace, "DateAttribute") :

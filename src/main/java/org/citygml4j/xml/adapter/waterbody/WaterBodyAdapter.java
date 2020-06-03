@@ -45,7 +45,7 @@ public class WaterBodyAdapter extends AbstractOccupiedSpaceAdapter<WaterBody> {
     }
 
     @Override
-    public Element createElement(WaterBody object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(WaterBody object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_WATERBODY_NAMESPACE, "WaterBody");
     }
 

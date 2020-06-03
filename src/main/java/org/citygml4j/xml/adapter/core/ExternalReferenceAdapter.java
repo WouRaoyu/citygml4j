@@ -56,7 +56,7 @@ public class ExternalReferenceAdapter implements ObjectBuilder<ExternalReference
     }
 
     @Override
-    public Element createElement(ExternalReference object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ExternalReference object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getCoreNamespace(namespaces), "ExternalReference");
     }
 

@@ -36,7 +36,7 @@ public class GroundSurfaceAdapter extends AbstractConstructionSurfaceAdapter<Gro
     }
 
     @Override
-    public Element createElement(GroundSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(GroundSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CONSTRUCTION_NAMESPACE, "GroundSurface");
     }
 

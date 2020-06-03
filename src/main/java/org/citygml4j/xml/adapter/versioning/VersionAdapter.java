@@ -50,7 +50,7 @@ public class VersionAdapter extends AbstractVersionAdapter<Version> {
     }
 
     @Override
-    public Element createElement(Version object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Version object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_VERSIONING_NAMESPACE, "Version");
     }
 

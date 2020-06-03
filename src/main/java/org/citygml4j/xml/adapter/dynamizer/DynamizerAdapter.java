@@ -58,7 +58,7 @@ public class DynamizerAdapter extends AbstractDynamizerAdapter<Dynamizer> {
     }
 
     @Override
-    public Element createElement(Dynamizer object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Dynamizer object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "Dynamizer");
     }
 

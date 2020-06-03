@@ -39,7 +39,7 @@ public class StringAttributeAdapter extends AbstractGenericAttributeAdapter<Stri
     }
 
     @Override
-    public Element createElement(StringAttribute object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(StringAttribute object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String genericsNamespace = CityGMLSerializerHelper.getGenericsNamespace(namespaces);
         return CityGMLConstants.CITYGML_3_0_GENERICS_NAMESPACE.equals(genericsNamespace) ?
                 Element.of(genericsNamespace, "StringAttribute") :

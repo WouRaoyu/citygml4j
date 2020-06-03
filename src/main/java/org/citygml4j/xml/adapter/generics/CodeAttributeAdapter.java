@@ -35,7 +35,7 @@ public class CodeAttributeAdapter extends AbstractGenericAttributeAdapter<CodeAt
     }
 
     @Override
-    public Element createElement(CodeAttribute object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CodeAttribute object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String genericsNamespace = CityGMLSerializerHelper.getGenericsNamespace(namespaces);
         return CityGMLConstants.CITYGML_3_0_GENERICS_NAMESPACE.equals(genericsNamespace) ?
                 Element.of(genericsNamespace, "CodeAttribute") :

@@ -36,7 +36,7 @@ public class TunnelPartAdapter extends AbstractTunnelAdapter<TunnelPart> {
     }
 
     @Override
-    public Element createElement(TunnelPart object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TunnelPart object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TUNNEL_NAMESPACE, "TunnelPart");
     }
 

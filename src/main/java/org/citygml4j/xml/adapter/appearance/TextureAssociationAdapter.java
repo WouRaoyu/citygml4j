@@ -41,7 +41,7 @@ public class TextureAssociationAdapter extends AbstractGMLAdapter<TextureAssocia
     }
 
     @Override
-    public Element createElement(TextureAssociation object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TextureAssociation object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_APPEARANCE_NAMESPACE, "TextureAssociation");
     }
 

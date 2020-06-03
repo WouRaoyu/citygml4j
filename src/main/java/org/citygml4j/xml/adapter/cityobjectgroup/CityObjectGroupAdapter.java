@@ -81,7 +81,7 @@ public class CityObjectGroupAdapter extends AbstractLogicalSpaceAdapter<CityObje
     }
 
     @Override
-    public Element createElement(CityObjectGroup object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CityObjectGroup object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getCityObjectGroupNamespace(namespaces), "CityObjectGroup");
     }
 

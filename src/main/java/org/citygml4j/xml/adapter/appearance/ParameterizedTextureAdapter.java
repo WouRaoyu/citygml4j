@@ -69,7 +69,7 @@ public class ParameterizedTextureAdapter extends AbstractTextureAdapter<Paramete
     }
 
     @Override
-    public Element createElement(ParameterizedTexture object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ParameterizedTexture object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getAppearanceNamespace(namespaces), "ParameterizedTexture");
     }
 

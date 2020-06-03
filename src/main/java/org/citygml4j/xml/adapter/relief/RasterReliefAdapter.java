@@ -65,7 +65,7 @@ public class RasterReliefAdapter extends AbstractReliefComponentAdapter<RasterRe
     }
 
     @Override
-    public Element createElement(RasterRelief object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(RasterRelief object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getReliefNamespace(namespaces), "RasterRelief");
     }
 

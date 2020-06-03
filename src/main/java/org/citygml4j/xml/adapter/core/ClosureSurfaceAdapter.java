@@ -36,7 +36,7 @@ public class ClosureSurfaceAdapter extends AbstractThematicSurfaceAdapter<Closur
     }
 
     @Override
-    public Element createElement(ClosureSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ClosureSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CORE_NAMESPACE, "ClosureSurface");
     }
 

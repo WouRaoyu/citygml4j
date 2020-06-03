@@ -66,7 +66,7 @@ public class TimeValuePairAdapter implements ObjectBuilder<TimeValuePair>, Objec
     }
 
     @Override
-    public Element createElement(TimeValuePair object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TimeValuePair object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "TimeValuePair");
     }
 

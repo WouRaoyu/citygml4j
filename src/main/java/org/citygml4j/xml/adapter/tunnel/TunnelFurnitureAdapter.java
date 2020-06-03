@@ -70,7 +70,7 @@ public class TunnelFurnitureAdapter extends AbstractFurnitureAdapter<TunnelFurni
     }
 
     @Override
-    public Element createElement(TunnelFurniture object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TunnelFurniture object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTunnelNamespace(namespaces), "TunnelFurniture");
     }
 

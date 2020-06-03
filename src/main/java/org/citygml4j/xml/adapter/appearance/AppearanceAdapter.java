@@ -71,7 +71,7 @@ public class AppearanceAdapter extends AbstractAppearanceAdapter<Appearance> {
     }
 
     @Override
-    public Element createElement(Appearance object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Appearance object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getAppearanceNamespace(namespaces), "Appearance");
     }
 

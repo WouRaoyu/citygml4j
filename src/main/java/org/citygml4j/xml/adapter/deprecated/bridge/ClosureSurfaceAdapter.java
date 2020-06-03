@@ -46,7 +46,7 @@ public class ClosureSurfaceAdapter extends AbstractBoundarySurfaceAdapter<Closur
     }
 
     @Override
-    public Element createElement(ClosureSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ClosureSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBridgeNamespace(namespaces), "ClosureSurface");
     }
 

@@ -54,7 +54,7 @@ public class RoadAdapter extends AbstractTransportationSpaceAdapter<Road> {
     }
 
     @Override
-    public Element createElement(Road object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Road object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TRANSPORTATION_NAMESPACE, "Road");
     }
 

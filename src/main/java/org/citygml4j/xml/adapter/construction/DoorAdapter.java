@@ -51,7 +51,7 @@ public class DoorAdapter extends AbstractFillingElementAdapter<Door> {
     }
 
     @Override
-    public Element createElement(Door object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Door object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CONSTRUCTION_NAMESPACE, "Door");
     }
 

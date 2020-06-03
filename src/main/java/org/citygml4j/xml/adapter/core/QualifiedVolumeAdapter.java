@@ -42,7 +42,7 @@ public class QualifiedVolumeAdapter implements ObjectBuilder<QualifiedVolume>, O
     }
 
     @Override
-    public Element createElement(QualifiedVolume object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(QualifiedVolume object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CORE_NAMESPACE, "QualifiedVolume");
     }
 

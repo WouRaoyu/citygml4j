@@ -56,7 +56,7 @@ public class PointCloudAdapter extends AbstractPointCloudAdapter<PointCloud> {
     }
 
     @Override
-    public Element createElement(PointCloud object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(PointCloud object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_POINTCLOUD_NAMESPACE, "PointCloud");
     }
 

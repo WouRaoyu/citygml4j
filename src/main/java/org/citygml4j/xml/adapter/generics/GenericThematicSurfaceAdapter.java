@@ -45,7 +45,7 @@ public class GenericThematicSurfaceAdapter extends AbstractThematicSurfaceAdapte
     }
 
     @Override
-    public Element createElement(GenericThematicSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(GenericThematicSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_GENERICS_NAMESPACE, "GenericThematicSurface");
     }
 

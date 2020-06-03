@@ -75,7 +75,7 @@ public final class TexCoordListAdapter extends AbstractTextureParameterizationAd
     }
 
     @Override
-    public Element createElement(TexCoordList object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TexCoordList object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getAppearanceNamespace(namespaces), "TexCoordList");
     }
 

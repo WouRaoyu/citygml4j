@@ -86,7 +86,7 @@ public class BridgeRoomAdapter extends AbstractUnoccupiedSpaceAdapter<BridgeRoom
     }
 
     @Override
-    public Element createElement(BridgeRoom object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BridgeRoom object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBridgeNamespace(namespaces), "BridgeRoom");
     }
 

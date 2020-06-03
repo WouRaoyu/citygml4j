@@ -59,7 +59,7 @@ public class EnergyPerformanceCertificationAdapter implements ObjectBuilder<Ener
     }
 
     @Override
-    public Element createElement(EnergyPerformanceCertification object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(EnergyPerformanceCertification object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(TestADEModule.NAMESPACE_1_0, "EnergyPerformanceCertification");
     }
 

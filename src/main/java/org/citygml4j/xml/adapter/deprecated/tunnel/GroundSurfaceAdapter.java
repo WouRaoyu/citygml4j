@@ -46,7 +46,7 @@ public class GroundSurfaceAdapter extends AbstractBoundarySurfaceAdapter<GroundS
     }
 
     @Override
-    public Element createElement(GroundSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(GroundSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTunnelNamespace(namespaces), "GroundSurface");
     }
 

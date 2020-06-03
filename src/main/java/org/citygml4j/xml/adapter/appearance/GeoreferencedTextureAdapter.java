@@ -78,7 +78,7 @@ public class GeoreferencedTextureAdapter extends AbstractTextureAdapter<Georefer
     }
 
     @Override
-    public Element createElement(GeoreferencedTexture object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(GeoreferencedTexture object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getAppearanceNamespace(namespaces), "GeoreferencedTexture");
     }
 

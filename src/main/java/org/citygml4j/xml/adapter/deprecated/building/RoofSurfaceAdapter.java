@@ -53,7 +53,7 @@ public class RoofSurfaceAdapter extends AbstractBoundarySurfaceAdapter<RoofSurfa
     }
 
     @Override
-    public Element createElement(RoofSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(RoofSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBuildingNamespace(namespaces), "RoofSurface");
     }
 

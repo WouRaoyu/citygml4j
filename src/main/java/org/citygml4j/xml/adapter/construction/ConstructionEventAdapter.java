@@ -48,7 +48,7 @@ public class ConstructionEventAdapter implements ObjectBuilder<ConstructionEvent
     }
 
     @Override
-    public Element createElement(ConstructionEvent object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(ConstructionEvent object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CONSTRUCTION_NAMESPACE, "ConstructionEvent");
     }
 

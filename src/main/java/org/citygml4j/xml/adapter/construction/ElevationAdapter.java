@@ -42,7 +42,7 @@ public class ElevationAdapter implements ObjectBuilder<Elevation>, ObjectSeriali
     }
 
     @Override
-    public Element createElement(Elevation object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Elevation object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CONSTRUCTION_NAMESPACE, "Elevation");
     }
 

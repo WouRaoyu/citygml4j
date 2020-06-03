@@ -53,7 +53,7 @@ public class WaterGroundSurfaceAdapter extends AbstractWaterBoundarySurfaceAdapt
     }
 
     @Override
-    public Element createElement(WaterGroundSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(WaterGroundSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getWaterBodyNamespace(namespaces), "WaterGroundSurface");
     }
 

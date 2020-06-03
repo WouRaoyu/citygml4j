@@ -51,7 +51,7 @@ public class AuxiliaryTrafficSpaceAdapter extends AbstractUnoccupiedSpaceAdapter
     }
 
     @Override
-    public Element createElement(AuxiliaryTrafficSpace object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(AuxiliaryTrafficSpace object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TRANSPORTATION_NAMESPACE, "AuxiliaryTrafficSpace");
     }
 

@@ -45,7 +45,7 @@ public class CompositeTimeseriesAdapter extends AbstractTimeseriesAdapter<Compos
     }
 
     @Override
-    public Element createElement(CompositeTimeseries object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CompositeTimeseries object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "CompositeTimeseries");
     }
 

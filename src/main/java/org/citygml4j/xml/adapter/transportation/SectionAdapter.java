@@ -45,7 +45,7 @@ public class SectionAdapter extends AbstractTransportationSpaceAdapter<Section> 
     }
 
     @Override
-    public Element createElement(Section object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Section object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TRANSPORTATION_NAMESPACE, "Section");
     }
 

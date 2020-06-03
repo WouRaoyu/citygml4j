@@ -45,7 +45,7 @@ public class TransactionAdapter implements ObjectBuilder<Transaction>, ObjectSer
     }
 
     @Override
-    public Element createElement(Transaction object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Transaction object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_VERSIONING_NAMESPACE, "Transaction");
     }
 

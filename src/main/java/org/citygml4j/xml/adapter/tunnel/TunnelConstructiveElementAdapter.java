@@ -45,7 +45,7 @@ public class TunnelConstructiveElementAdapter extends AbstractConstructiveElemen
     }
 
     @Override
-    public Element createElement(TunnelConstructiveElement object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TunnelConstructiveElement object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_TUNNEL_NAMESPACE, "TunnelConstructiveElement");
     }
 

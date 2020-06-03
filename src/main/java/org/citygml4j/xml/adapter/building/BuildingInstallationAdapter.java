@@ -108,7 +108,7 @@ public class BuildingInstallationAdapter extends AbstractInstallationAdapter<Bui
     }
 
     @Override
-    public Element createElement(BuildingInstallation object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BuildingInstallation object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String buildingNamespace = CityGMLSerializerHelper.getBuildingNamespace(namespaces);
         return !CityGMLConstants.CITYGML_3_0_BUILDING_NAMESPACE.equals(buildingNamespace)
                 && object.getRelationToConstruction() == RelationToConstruction.INSIDE ?

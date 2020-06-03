@@ -70,7 +70,7 @@ public class BridgeFurnitureAdapter extends AbstractFurnitureAdapter<BridgeFurni
     }
 
     @Override
-    public Element createElement(BridgeFurniture object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BridgeFurniture object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBridgeNamespace(namespaces), "BridgeFurniture");
     }
 

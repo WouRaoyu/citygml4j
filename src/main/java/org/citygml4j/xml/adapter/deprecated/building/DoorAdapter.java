@@ -60,7 +60,7 @@ public class DoorAdapter extends AbstractOpeningAdapter<DoorSurface> {
     }
 
     @Override
-    public Element createElement(DoorSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(DoorSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBuildingNamespace(namespaces), "Door");
     }
 

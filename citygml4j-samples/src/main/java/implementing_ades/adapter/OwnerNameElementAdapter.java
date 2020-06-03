@@ -50,7 +50,7 @@ public class OwnerNameElementAdapter implements ObjectBuilder<OwnerNameElement>,
     }
 
     @Override
-    public Element createElement(OwnerNameElement object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(OwnerNameElement object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(TestADEModule.NAMESPACE_1_0, "ownerName");
     }
 

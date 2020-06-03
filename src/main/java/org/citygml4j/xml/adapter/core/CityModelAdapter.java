@@ -64,7 +64,7 @@ public class CityModelAdapter extends AbstractFeatureWithLifespanAdapter<CityMod
     }
 
     @Override
-    public Element createElement(CityModel object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CityModel object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CORE_NAMESPACE, "CityModel");
     }
 

@@ -51,7 +51,7 @@ public class FloorAreaElementAdapter implements ObjectBuilder<FloorAreaElement>,
     }
 
     @Override
-    public Element createElement(FloorAreaElement object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(FloorAreaElement object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(TestADEModule.NAMESPACE_1_0, "floorArea");
     }
 

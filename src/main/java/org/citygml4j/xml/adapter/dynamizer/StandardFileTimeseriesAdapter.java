@@ -51,7 +51,7 @@ public class StandardFileTimeseriesAdapter extends AbstractAtomicTimeseriesAdapt
     }
 
     @Override
-    public Element createElement(StandardFileTimeseries object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(StandardFileTimeseries object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "StandardFileTimeseries");
     }
 

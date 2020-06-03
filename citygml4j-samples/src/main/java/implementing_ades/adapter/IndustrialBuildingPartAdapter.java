@@ -58,7 +58,7 @@ public class IndustrialBuildingPartAdapter extends CompositeObjectAdapter<Indust
     }
 
     @Override
-    public Element createElement(IndustrialBuildingPart object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(IndustrialBuildingPart object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(TestADEModule.NAMESPACE_1_0, "IndustrialBuildingPart");
     }
 

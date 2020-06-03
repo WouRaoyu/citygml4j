@@ -69,7 +69,7 @@ public class BreaklineReliefAdapter extends AbstractReliefComponentAdapter<Break
     }
 
     @Override
-    public Element createElement(BreaklineRelief object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BreaklineRelief object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getReliefNamespace(namespaces), "BreaklineRelief");
     }
 

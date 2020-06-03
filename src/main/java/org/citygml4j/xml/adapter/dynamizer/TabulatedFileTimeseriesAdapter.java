@@ -86,7 +86,7 @@ public class TabulatedFileTimeseriesAdapter extends AbstractAtomicTimeseriesAdap
     }
 
     @Override
-    public Element createElement(TabulatedFileTimeseries object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TabulatedFileTimeseries object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "TabulatedFileTimeseries");
     }
 

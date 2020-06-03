@@ -45,7 +45,7 @@ public class BuildingConstructiveElementAdapter extends AbstractConstructiveElem
     }
 
     @Override
-    public Element createElement(BuildingConstructiveElement object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BuildingConstructiveElement object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_BUILDING_NAMESPACE, "BuildingConstructiveElement");
     }
 

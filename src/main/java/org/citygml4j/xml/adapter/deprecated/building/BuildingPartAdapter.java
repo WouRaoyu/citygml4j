@@ -53,7 +53,7 @@ public class BuildingPartAdapter extends AbstractBuildingAdapter<BuildingPart> {
     }
 
     @Override
-    public Element createElement(BuildingPart object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BuildingPart object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBuildingNamespace(namespaces), "BuildingPart");
     }
 

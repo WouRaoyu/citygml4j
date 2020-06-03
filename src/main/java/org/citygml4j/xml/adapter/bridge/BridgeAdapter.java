@@ -45,7 +45,7 @@ public class BridgeAdapter extends AbstractBridgeAdapter<Bridge> {
     }
 
     @Override
-    public Element createElement(Bridge object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Bridge object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_BRIDGE_NAMESPACE, "Bridge");
     }
 

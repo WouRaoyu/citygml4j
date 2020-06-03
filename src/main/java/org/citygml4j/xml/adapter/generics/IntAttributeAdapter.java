@@ -40,7 +40,7 @@ public class IntAttributeAdapter extends AbstractGenericAttributeAdapter<IntAttr
     }
 
     @Override
-    public Element createElement(IntAttribute object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(IntAttribute object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String genericsNamespace = CityGMLSerializerHelper.getGenericsNamespace(namespaces);
         return CityGMLConstants.CITYGML_3_0_GENERICS_NAMESPACE.equals(genericsNamespace) ?
                 Element.of(genericsNamespace, "IntAttribute") :

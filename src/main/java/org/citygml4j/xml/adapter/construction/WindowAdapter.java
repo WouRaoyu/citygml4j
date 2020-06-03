@@ -44,7 +44,7 @@ public class WindowAdapter extends AbstractFillingElementAdapter<Window> {
     }
 
     @Override
-    public Element createElement(Window object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Window object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_CONSTRUCTION_NAMESPACE, "Window");
     }
 

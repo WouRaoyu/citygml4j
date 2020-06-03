@@ -51,7 +51,7 @@ public class BuildingUnitAdapter extends AbstractBuildingSubdivisionAdapter<Buil
     }
 
     @Override
-    public Element createElement(BuildingUnit object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BuildingUnit object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_BUILDING_NAMESPACE, "BuildingUnit");
     }
 

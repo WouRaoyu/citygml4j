@@ -46,7 +46,7 @@ public class OuterFloorSurfaceAdapter extends AbstractBoundarySurfaceAdapter<Out
     }
 
     @Override
-    public Element createElement(OuterFloorSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(OuterFloorSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getBridgeNamespace(namespaces), "OuterFloorSurface");
     }
 

@@ -112,7 +112,7 @@ public class CityFurnitureAdapter extends AbstractOccupiedSpaceAdapter<CityFurni
     }
 
     @Override
-    public Element createElement(CityFurniture object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CityFurniture object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getCityFurnitureNamespace(namespaces), "CityFurniture");
     }
 

@@ -104,7 +104,7 @@ public class TunnelInstallationAdapter extends AbstractInstallationAdapter<Tunne
     }
 
     @Override
-    public Element createElement(TunnelInstallation object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TunnelInstallation object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String tunnelNamespace = CityGMLSerializerHelper.getTunnelNamespace(namespaces);
         return !CityGMLConstants.CITYGML_3_0_TUNNEL_NAMESPACE.equals(tunnelNamespace)
                 && object.getRelationToConstruction() == RelationToConstruction.INSIDE ?

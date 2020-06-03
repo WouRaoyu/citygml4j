@@ -46,7 +46,7 @@ public class CeilingSurfaceAdapter extends AbstractBoundarySurfaceAdapter<Ceilin
     }
 
     @Override
-    public Element createElement(CeilingSurface object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(CeilingSurface object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTunnelNamespace(namespaces), "CeilingSurface");
     }
 

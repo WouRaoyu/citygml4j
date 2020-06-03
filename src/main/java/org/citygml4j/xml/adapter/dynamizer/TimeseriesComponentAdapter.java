@@ -45,7 +45,7 @@ public class TimeseriesComponentAdapter implements ObjectBuilder<TimeseriesCompo
     }
 
     @Override
-    public Element createElement(TimeseriesComponent object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TimeseriesComponent object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "TimeseriesComponent");
     }
 

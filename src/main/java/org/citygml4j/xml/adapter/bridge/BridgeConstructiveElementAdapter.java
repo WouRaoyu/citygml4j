@@ -114,7 +114,7 @@ public class BridgeConstructiveElementAdapter extends AbstractConstructiveElemen
     }
 
     @Override
-    public Element createElement(BridgeConstructiveElement object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(BridgeConstructiveElement object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         String bridgeNamespace = CityGMLSerializerHelper.getBridgeNamespace(namespaces);
         return CityGMLConstants.CITYGML_3_0_BRIDGE_NAMESPACE.equals(bridgeNamespace) ?
                 Element.of(bridgeNamespace, "BridgeConstructiveElement") :

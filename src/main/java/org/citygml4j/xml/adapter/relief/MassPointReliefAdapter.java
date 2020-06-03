@@ -70,7 +70,7 @@ public class MassPointReliefAdapter extends AbstractReliefComponentAdapter<MassP
     }
 
     @Override
-    public Element createElement(MassPointRelief object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(MassPointRelief object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getReliefNamespace(namespaces), "MassPointRelief");
     }
 

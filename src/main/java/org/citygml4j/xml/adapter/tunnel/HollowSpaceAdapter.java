@@ -86,7 +86,7 @@ public class HollowSpaceAdapter extends AbstractUnoccupiedSpaceAdapter<HollowSpa
     }
 
     @Override
-    public Element createElement(HollowSpace object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(HollowSpace object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTunnelNamespace(namespaces), "HollowSpace");
     }
 

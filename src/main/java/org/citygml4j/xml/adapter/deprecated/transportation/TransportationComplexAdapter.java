@@ -53,7 +53,7 @@ public class TransportationComplexAdapter extends AbstractTransportationObjectAd
     }
 
     @Override
-    public Element createElement(TransportationComplex object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(TransportationComplex object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTransportationNamespace(namespaces), "TransportationComplex");
     }
 

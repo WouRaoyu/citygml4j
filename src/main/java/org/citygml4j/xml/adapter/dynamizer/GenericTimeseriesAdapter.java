@@ -49,7 +49,7 @@ public class GenericTimeseriesAdapter extends AbstractAtomicTimeseriesAdapter<Ge
     }
 
     @Override
-    public Element createElement(GenericTimeseries object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(GenericTimeseries object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLConstants.CITYGML_3_0_DYNAMIZER_NAMESPACE, "GenericTimeseries");
     }
 

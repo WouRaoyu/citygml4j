@@ -53,7 +53,7 @@ public class SquareAdapter extends AbstractTransportationObjectAdapter<Square> {
     }
 
     @Override
-    public Element createElement(Square object, Namespaces namespaces) throws ObjectSerializeException {
+    public Element createElement(Square object, Namespaces namespaces, XMLWriter writer) throws ObjectSerializeException, XMLWriteException {
         return Element.of(CityGMLSerializerHelper.getTransportationNamespace(namespaces), "Square");
     }
 
