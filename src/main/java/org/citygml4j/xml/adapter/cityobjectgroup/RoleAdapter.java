@@ -21,7 +21,7 @@ import javax.xml.namespace.QName;
 public class RoleAdapter extends AbstractGMLAdapter<Role> {
 
     @Override
-    public Role createObject(QName name) throws ObjectBuildException {
+    public Role createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Role();
     }
 

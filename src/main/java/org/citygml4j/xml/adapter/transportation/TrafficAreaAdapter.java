@@ -37,7 +37,7 @@ public class TrafficAreaAdapter extends AbstractThematicSurfaceAdapter<TrafficAr
     };
 
     @Override
-    public TrafficArea createObject(QName name) throws ObjectBuildException {
+    public TrafficArea createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new TrafficArea();
     }
 

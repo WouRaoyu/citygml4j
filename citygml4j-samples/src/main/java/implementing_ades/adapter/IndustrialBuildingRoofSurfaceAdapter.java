@@ -44,7 +44,7 @@ public class IndustrialBuildingRoofSurfaceAdapter extends CompositeObjectAdapter
     }
 
     @Override
-    public IndustrialBuildingRoofSurface createObject(QName name) throws ObjectBuildException {
+    public IndustrialBuildingRoofSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new IndustrialBuildingRoofSurface();
     }
 

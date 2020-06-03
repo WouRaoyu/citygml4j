@@ -40,7 +40,7 @@ import javax.xml.namespace.QName;
 public class BuildingUnitElementAdapter implements ObjectBuilder<BuildingUnitElement>, ObjectSerializer<BuildingUnitElement> {
 
     @Override
-    public BuildingUnitElement createObject(QName name) throws ObjectBuildException {
+    public BuildingUnitElement createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new BuildingUnitElement();
     }
 

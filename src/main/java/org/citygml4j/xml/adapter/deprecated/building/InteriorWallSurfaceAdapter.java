@@ -33,7 +33,7 @@ public class InteriorWallSurfaceAdapter extends AbstractBoundarySurfaceAdapter<I
     };
 
     @Override
-    public InteriorWallSurface createObject(QName name) throws ObjectBuildException {
+    public InteriorWallSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new InteriorWallSurface();
     }
 

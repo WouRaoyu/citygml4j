@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 public class ExternalReferenceAdapter implements ObjectBuilder<ExternalReference>, ObjectSerializer<ExternalReference> {
 
     @Override
-    public ExternalReference createObject(QName name) throws ObjectBuildException {
+    public ExternalReference createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new ExternalReference();
     }
 

@@ -28,7 +28,7 @@ import javax.xml.namespace.QName;
 public class IntAttributeAdapter extends AbstractGenericAttributeAdapter<IntAttribute> {
 
     @Override
-    public IntAttribute createObject(QName name) throws ObjectBuildException {
+    public IntAttribute createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new IntAttribute();
     }
 

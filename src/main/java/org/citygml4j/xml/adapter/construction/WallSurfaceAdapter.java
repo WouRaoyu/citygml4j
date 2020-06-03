@@ -23,7 +23,7 @@ import javax.xml.namespace.QName;
 public class WallSurfaceAdapter extends AbstractConstructionSurfaceAdapter<WallSurface> {
 
     @Override
-    public WallSurface createObject(QName name) throws ObjectBuildException {
+    public WallSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new WallSurface();
     }
 

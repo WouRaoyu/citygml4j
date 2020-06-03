@@ -3,13 +3,15 @@ package org.citygml4j.xml.adapter.core;
 import org.citygml4j.model.core.AbstractPointCloudProperty;
 import org.xmlobjects.builder.ObjectBuildException;
 import org.xmlobjects.gml.adapter.feature.AbstractFeaturePropertyAdapter;
+import org.xmlobjects.stream.XMLReadException;
+import org.xmlobjects.stream.XMLReader;
 
 import javax.xml.namespace.QName;
 
 public class AbstractPointCloudPropertyAdapter extends AbstractFeaturePropertyAdapter<AbstractPointCloudProperty> {
 
     @Override
-    public AbstractPointCloudProperty createObject(QName name) throws ObjectBuildException {
+    public AbstractPointCloudProperty createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new AbstractPointCloudProperty();
     }
 }

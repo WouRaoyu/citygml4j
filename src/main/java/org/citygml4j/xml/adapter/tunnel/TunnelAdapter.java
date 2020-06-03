@@ -24,7 +24,7 @@ import javax.xml.namespace.QName;
 public class TunnelAdapter extends AbstractTunnelAdapter<Tunnel> {
 
     @Override
-    public Tunnel createObject(QName name) throws ObjectBuildException {
+    public Tunnel createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Tunnel();
     }
 

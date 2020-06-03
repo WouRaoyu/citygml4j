@@ -33,7 +33,7 @@ public class RailwayAdapter extends AbstractTransportationObjectAdapter<Railway>
     };
 
     @Override
-    public Railway createObject(QName name) throws ObjectBuildException {
+    public Railway createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Railway();
     }
 

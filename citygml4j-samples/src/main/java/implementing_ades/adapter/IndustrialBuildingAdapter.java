@@ -44,7 +44,7 @@ public class IndustrialBuildingAdapter extends CompositeObjectAdapter<Industrial
     }
 
     @Override
-    public IndustrialBuilding createObject(QName name) throws ObjectBuildException {
+    public IndustrialBuilding createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new IndustrialBuilding();
     }
 

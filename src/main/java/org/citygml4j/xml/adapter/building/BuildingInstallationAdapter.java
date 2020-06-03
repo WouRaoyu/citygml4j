@@ -46,7 +46,7 @@ public class BuildingInstallationAdapter extends AbstractInstallationAdapter<Bui
     };
 
     @Override
-    public BuildingInstallation createObject(QName name) throws ObjectBuildException {
+    public BuildingInstallation createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         BuildingInstallation object = new BuildingInstallation();
         if ("IntBuildingInstallation".equals(name.getLocalPart()))
             object.setRelationToConstruction(RelationToConstruction.INSIDE);

@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 public class HoleAdapter extends AbstractUnoccupiedSpaceAdapter<Hole> {
 
     @Override
-    public Hole createObject(QName name) throws ObjectBuildException {
+    public Hole createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Hole();
     }
 

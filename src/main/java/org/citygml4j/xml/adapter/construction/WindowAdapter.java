@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 public class WindowAdapter extends AbstractFillingElementAdapter<Window> {
 
     @Override
-    public Window createObject(QName name) throws ObjectBuildException {
+    public Window createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Window();
     }
 

@@ -35,7 +35,7 @@ public class DoorAdapter extends AbstractOpeningAdapter<DoorSurface> {
     };
 
     @Override
-    public DoorSurface createObject(QName name) throws ObjectBuildException {
+    public DoorSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new DoorSurface();
     }
 

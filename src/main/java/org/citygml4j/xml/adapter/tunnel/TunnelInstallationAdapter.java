@@ -42,7 +42,7 @@ public class TunnelInstallationAdapter extends AbstractInstallationAdapter<Tunne
     };
 
     @Override
-    public TunnelInstallation createObject(QName name) throws ObjectBuildException {
+    public TunnelInstallation createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         TunnelInstallation object = new TunnelInstallation();
         if ("IntTunnelInstallation".equals(name.getLocalPart()))
             object.setRelationToConstruction(RelationToConstruction.INSIDE);

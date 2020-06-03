@@ -33,7 +33,7 @@ public class WaterClosureSurfaceAdapter extends AbstractWaterBoundarySurfaceAdap
     };
 
     @Override
-    public ClosureSurface createObject(QName name) throws ObjectBuildException {
+    public ClosureSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new ClosureSurface();
     }
 

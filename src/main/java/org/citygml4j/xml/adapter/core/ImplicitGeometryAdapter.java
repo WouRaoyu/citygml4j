@@ -33,7 +33,7 @@ import javax.xml.namespace.QName;
 public class ImplicitGeometryAdapter extends AbstractGMLAdapter<ImplicitGeometry> {
 
     @Override
-    public ImplicitGeometry createObject(QName name) throws ObjectBuildException {
+    public ImplicitGeometry createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new ImplicitGeometry();
     }
 

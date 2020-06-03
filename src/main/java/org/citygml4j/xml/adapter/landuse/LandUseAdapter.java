@@ -36,7 +36,7 @@ public class LandUseAdapter extends AbstractThematicSurfaceAdapter<LandUse> {
     };
 
     @Override
-    public LandUse createObject(QName name) throws ObjectBuildException {
+    public LandUse createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new LandUse();
     }
 

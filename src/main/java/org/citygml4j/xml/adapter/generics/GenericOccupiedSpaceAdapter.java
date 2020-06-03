@@ -35,7 +35,7 @@ import javax.xml.namespace.QName;
 public class GenericOccupiedSpaceAdapter extends AbstractOccupiedSpaceAdapter<GenericOccupiedSpace> {
 
     @Override
-    public GenericOccupiedSpace createObject(QName name) throws ObjectBuildException {
+    public GenericOccupiedSpace createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new GenericOccupiedSpace();
     }
 

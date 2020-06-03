@@ -41,7 +41,7 @@ public class WaterBodyAdapter extends AbstractCityObjectAdapter<WaterBody> {
     };
 
     @Override
-    public WaterBody createObject(QName name) throws ObjectBuildException {
+    public WaterBody createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new WaterBody();
     }
 

@@ -27,7 +27,7 @@ import javax.xml.namespace.QName;
 public class TrackAdapter extends AbstractTransportationSpaceAdapter<Track> {
 
     @Override
-    public Track createObject(QName name) throws ObjectBuildException {
+    public Track createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Track();
     }
 

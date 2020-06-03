@@ -24,7 +24,7 @@ import javax.xml.namespace.QName;
 public class CompositeTimeseriesAdapter extends AbstractTimeseriesAdapter<CompositeTimeseries> {
 
     @Override
-    public CompositeTimeseries createObject(QName name) throws ObjectBuildException {
+    public CompositeTimeseries createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new CompositeTimeseries();
     }
 

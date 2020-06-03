@@ -33,7 +33,7 @@ public class TrackAdapter extends AbstractTransportationObjectAdapter<Track> {
     };
 
     @Override
-    public Track createObject(QName name) throws ObjectBuildException {
+    public Track createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Track();
     }
 

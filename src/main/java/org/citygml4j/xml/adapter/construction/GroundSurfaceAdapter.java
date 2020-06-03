@@ -23,7 +23,7 @@ import javax.xml.namespace.QName;
 public class GroundSurfaceAdapter extends AbstractConstructionSurfaceAdapter<GroundSurface> {
 
     @Override
-    public GroundSurface createObject(QName name) throws ObjectBuildException {
+    public GroundSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new GroundSurface();
     }
 

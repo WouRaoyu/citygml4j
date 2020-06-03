@@ -27,7 +27,7 @@ import javax.xml.namespace.QName;
 public class UriAttributeAdapter extends AbstractGenericAttributeAdapter<UriAttribute> {
 
     @Override
-    public UriAttribute createObject(QName name) throws ObjectBuildException {
+    public UriAttribute createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new UriAttribute();
     }
 

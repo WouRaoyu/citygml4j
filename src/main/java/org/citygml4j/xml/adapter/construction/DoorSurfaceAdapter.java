@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 public class DoorSurfaceAdapter extends AbstractFillingSurfaceAdapter<DoorSurface> {
 
     @Override
-    public DoorSurface createObject(QName name) throws ObjectBuildException {
+    public DoorSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new DoorSurface();
     }
 

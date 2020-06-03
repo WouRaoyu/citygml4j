@@ -22,13 +22,15 @@ package implementing_ades.adapter;
 import implementing_ades.model.FacilitiesProperty;
 import org.xmlobjects.builder.ObjectBuildException;
 import org.xmlobjects.gml.adapter.feature.AbstractFeaturePropertyAdapter;
+import org.xmlobjects.stream.XMLReadException;
+import org.xmlobjects.stream.XMLReader;
 
 import javax.xml.namespace.QName;
 
 public class FacilitiesPropertyAdapter extends AbstractFeaturePropertyAdapter<FacilitiesProperty> {
 
     @Override
-    public FacilitiesProperty createObject(QName name) throws ObjectBuildException {
+    public FacilitiesProperty createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new FacilitiesProperty();
     }
 }

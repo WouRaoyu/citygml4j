@@ -40,7 +40,7 @@ public class PlantCoverAdapter extends AbstractVegetationObjectAdapter<PlantCove
     };
 
     @Override
-    public PlantCover createObject(QName name) throws ObjectBuildException {
+    public PlantCover createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new PlantCover();
     }
 

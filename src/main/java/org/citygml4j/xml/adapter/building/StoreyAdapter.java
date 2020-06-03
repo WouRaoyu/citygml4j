@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 public class StoreyAdapter extends AbstractBuildingSubdivisionAdapter<Storey> {
 
     @Override
-    public Storey createObject(QName name) throws ObjectBuildException {
+    public Storey createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Storey();
     }
 

@@ -23,7 +23,7 @@ import javax.xml.namespace.QName;
 public class RoofSurfaceAdapter extends AbstractConstructionSurfaceAdapter<RoofSurface> {
 
     @Override
-    public RoofSurface createObject(QName name) throws ObjectBuildException {
+    public RoofSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new RoofSurface();
     }
 

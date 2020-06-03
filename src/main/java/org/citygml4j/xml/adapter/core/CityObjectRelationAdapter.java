@@ -22,7 +22,7 @@ import javax.xml.namespace.QName;
 public class CityObjectRelationAdapter extends AbstractGMLAdapter<CityObjectRelation> {
 
     @Override
-    public CityObjectRelation createObject(QName name) throws ObjectBuildException {
+    public CityObjectRelation createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new CityObjectRelation();
     }
 

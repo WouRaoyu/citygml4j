@@ -33,7 +33,7 @@ public class TransportationComplexAdapter extends AbstractTransportationObjectAd
     };
 
     @Override
-    public TransportationComplex createObject(QName name) throws ObjectBuildException {
+    public TransportationComplex createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new TransportationComplex();
     }
 

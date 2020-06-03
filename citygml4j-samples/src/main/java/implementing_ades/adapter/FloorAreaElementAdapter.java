@@ -41,7 +41,7 @@ import javax.xml.namespace.QName;
 public class FloorAreaElementAdapter implements ObjectBuilder<FloorAreaElement>, ObjectSerializer<FloorAreaElement> {
 
     @Override
-    public FloorAreaElement createObject(QName name) throws ObjectBuildException {
+    public FloorAreaElement createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new FloorAreaElement();
     }
 

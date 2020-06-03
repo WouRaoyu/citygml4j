@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 public class OtherConstructionAdapter extends AbstractConstructionAdapter<OtherConstruction> {
 
     @Override
-    public OtherConstruction createObject(QName name) throws ObjectBuildException {
+    public OtherConstruction createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new OtherConstruction();
     }
 

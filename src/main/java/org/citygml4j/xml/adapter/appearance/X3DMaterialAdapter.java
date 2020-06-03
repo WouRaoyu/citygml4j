@@ -37,7 +37,7 @@ public class X3DMaterialAdapter extends AbstractSurfaceDataAdapter<X3DMaterial> 
     };
 
     @Override
-    public X3DMaterial createObject(QName name) throws ObjectBuildException {
+    public X3DMaterial createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new X3DMaterial();
     }
 

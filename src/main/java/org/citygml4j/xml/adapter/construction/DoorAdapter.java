@@ -27,7 +27,7 @@ import javax.xml.namespace.QName;
 public class DoorAdapter extends AbstractFillingElementAdapter<Door> {
 
     @Override
-    public Door createObject(QName name) throws ObjectBuildException {
+    public Door createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Door();
     }
 

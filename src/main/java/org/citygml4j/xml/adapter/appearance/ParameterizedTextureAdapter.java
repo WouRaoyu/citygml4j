@@ -35,7 +35,7 @@ public class ParameterizedTextureAdapter extends AbstractTextureAdapter<Paramete
     };
 
     @Override
-    public ParameterizedTexture createObject(QName name) throws ObjectBuildException {
+    public ParameterizedTexture createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new ParameterizedTexture();
     }
 

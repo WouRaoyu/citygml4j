@@ -40,7 +40,7 @@ import javax.xml.namespace.QName;
 public class OwnerNameElementAdapter implements ObjectBuilder<OwnerNameElement>, ObjectSerializer<OwnerNameElement> {
 
     @Override
-    public OwnerNameElement createObject(QName name) throws ObjectBuildException {
+    public OwnerNameElement createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new OwnerNameElement();
     }
 

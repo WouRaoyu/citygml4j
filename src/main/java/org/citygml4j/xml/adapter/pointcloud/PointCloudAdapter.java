@@ -26,7 +26,7 @@ import javax.xml.namespace.QName;
 public class PointCloudAdapter extends AbstractPointCloudAdapter<PointCloud> {
 
     @Override
-    public PointCloud createObject(QName name) throws ObjectBuildException {
+    public PointCloud createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new PointCloud();
     }
 

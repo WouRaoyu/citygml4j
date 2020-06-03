@@ -33,7 +33,7 @@ public class SquareAdapter extends AbstractTransportationObjectAdapter<Square> {
     };
 
     @Override
-    public Square createObject(QName name) throws ObjectBuildException {
+    public Square createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Square();
     }
 

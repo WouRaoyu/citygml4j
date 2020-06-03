@@ -23,7 +23,7 @@ import javax.xml.namespace.QName;
 public class OuterFloorSurfaceAdapter extends AbstractConstructionSurfaceAdapter<OuterFloorSurface> {
 
     @Override
-    public OuterFloorSurface createObject(QName name) throws ObjectBuildException {
+    public OuterFloorSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new OuterFloorSurface();
     }
 

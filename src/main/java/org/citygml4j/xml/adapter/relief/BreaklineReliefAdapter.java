@@ -35,7 +35,7 @@ public class BreaklineReliefAdapter extends AbstractReliefComponentAdapter<Break
     };
 
     @Override
-    public BreaklineRelief createObject(QName name) throws ObjectBuildException {
+    public BreaklineRelief createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new BreaklineRelief();
     }
 

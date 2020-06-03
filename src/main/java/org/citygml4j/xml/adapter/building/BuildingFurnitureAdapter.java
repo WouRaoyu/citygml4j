@@ -37,7 +37,7 @@ public class BuildingFurnitureAdapter extends AbstractFurnitureAdapter<BuildingF
     };
 
     @Override
-    public BuildingFurniture createObject(QName name) throws ObjectBuildException {
+    public BuildingFurniture createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new BuildingFurniture();
     }
 

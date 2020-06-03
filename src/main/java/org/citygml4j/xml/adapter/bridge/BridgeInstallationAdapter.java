@@ -41,7 +41,7 @@ public class BridgeInstallationAdapter extends AbstractInstallationAdapter<Bridg
     };
 
     @Override
-    public BridgeInstallation createObject(QName name) throws ObjectBuildException {
+    public BridgeInstallation createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         BridgeInstallation object = new BridgeInstallation();
         if ("IntBridgeInstallation".equals(name.getLocalPart()))
             object.setRelationToConstruction(RelationToConstruction.INSIDE);

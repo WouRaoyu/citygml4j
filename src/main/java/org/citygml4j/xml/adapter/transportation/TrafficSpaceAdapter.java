@@ -32,7 +32,7 @@ import javax.xml.namespace.QName;
 public class TrafficSpaceAdapter extends AbstractUnoccupiedSpaceAdapter<TrafficSpace> {
 
     @Override
-    public TrafficSpace createObject(QName name) throws ObjectBuildException {
+    public TrafficSpace createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new TrafficSpace();
     }
 

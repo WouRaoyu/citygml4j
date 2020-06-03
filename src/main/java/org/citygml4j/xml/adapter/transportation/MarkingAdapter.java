@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 public class MarkingAdapter extends AbstractThematicSurfaceAdapter<Marking> {
 
     @Override
-    public Marking createObject(QName name) throws ObjectBuildException {
+    public Marking createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new Marking();
     }
 

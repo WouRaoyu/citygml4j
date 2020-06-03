@@ -37,7 +37,7 @@ public class ReliefFeatureAdapter extends AbstractSpaceBoundaryAdapter<ReliefFea
     };
 
     @Override
-    public ReliefFeature createObject(QName name) throws ObjectBuildException {
+    public ReliefFeature createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new ReliefFeature();
     }
 

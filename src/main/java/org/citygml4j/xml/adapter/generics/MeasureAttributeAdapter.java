@@ -28,7 +28,7 @@ import javax.xml.namespace.QName;
 public class MeasureAttributeAdapter extends AbstractGenericAttributeAdapter<MeasureAttribute> {
 
     @Override
-    public MeasureAttribute createObject(QName name) throws ObjectBuildException {
+    public MeasureAttribute createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new MeasureAttribute();
     }
 

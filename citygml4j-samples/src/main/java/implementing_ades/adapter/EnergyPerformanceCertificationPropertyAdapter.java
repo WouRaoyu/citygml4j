@@ -22,13 +22,15 @@ package implementing_ades.adapter;
 import implementing_ades.model.EnergyPerformanceCertificationProperty;
 import org.xmlobjects.builder.ObjectBuildException;
 import org.xmlobjects.gml.adapter.base.AbstractInlinePropertyAdapter;
+import org.xmlobjects.stream.XMLReadException;
+import org.xmlobjects.stream.XMLReader;
 
 import javax.xml.namespace.QName;
 
 public class EnergyPerformanceCertificationPropertyAdapter extends AbstractInlinePropertyAdapter<EnergyPerformanceCertificationProperty> {
 
     @Override
-    public EnergyPerformanceCertificationProperty createObject(QName name) throws ObjectBuildException {
+    public EnergyPerformanceCertificationProperty createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new EnergyPerformanceCertificationProperty();
     }
 }

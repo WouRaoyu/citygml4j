@@ -34,7 +34,7 @@ public class TINReliefAdapter extends AbstractReliefComponentAdapter<TINRelief> 
     };
 
     @Override
-    public TINRelief createObject(QName name) throws ObjectBuildException {
+    public TINRelief createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new TINRelief();
     }
 

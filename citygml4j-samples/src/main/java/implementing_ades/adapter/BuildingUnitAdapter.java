@@ -24,6 +24,8 @@ import implementing_ades.module.TestADEModule;
 import org.xmlobjects.annotation.XMLElement;
 import org.xmlobjects.builder.ObjectBuildException;
 import org.xmlobjects.serializer.ObjectSerializeException;
+import org.xmlobjects.stream.XMLReadException;
+import org.xmlobjects.stream.XMLReader;
 import org.xmlobjects.xml.Element;
 import org.xmlobjects.xml.Namespaces;
 
@@ -33,7 +35,7 @@ import javax.xml.namespace.QName;
 public class BuildingUnitAdapter extends AbstractBuildingUnitAdapter<BuildingUnit> {
 
     @Override
-    public BuildingUnit createObject(QName name) throws ObjectBuildException {
+    public BuildingUnit createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new BuildingUnit();
     }
 

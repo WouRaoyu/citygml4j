@@ -34,7 +34,7 @@ public class WaterSurfaceAdapter extends AbstractWaterBoundarySurfaceAdapter<Wat
     };
 
     @Override
-    public WaterSurface createObject(QName name) throws ObjectBuildException {
+    public WaterSurface createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new WaterSurface();
     }
 

@@ -46,7 +46,7 @@ public class CityModelAdapter extends AbstractFeatureAdapter<CityModel> {
     };
 
     @Override
-    public CityModel createObject(QName name) throws ObjectBuildException {
+    public CityModel createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new CityModel();
     }
 

@@ -23,7 +23,7 @@ import javax.xml.namespace.QName;
 public class QualifiedVolumeAdapter implements ObjectBuilder<QualifiedVolume>, ObjectSerializer<QualifiedVolume> {
 
     @Override
-    public QualifiedVolume createObject(QName name) throws ObjectBuildException {
+    public QualifiedVolume createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new QualifiedVolume();
     }
 

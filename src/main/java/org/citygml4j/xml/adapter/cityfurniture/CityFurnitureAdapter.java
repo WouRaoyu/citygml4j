@@ -39,7 +39,7 @@ public class CityFurnitureAdapter extends AbstractOccupiedSpaceAdapter<CityFurni
     };
 
     @Override
-    public CityFurniture createObject(QName name) throws ObjectBuildException {
+    public CityFurniture createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new CityFurniture();
     }
 

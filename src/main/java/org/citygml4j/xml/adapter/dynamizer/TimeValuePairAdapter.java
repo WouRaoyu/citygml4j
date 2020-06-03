@@ -26,7 +26,7 @@ import javax.xml.namespace.QName;
 public class TimeValuePairAdapter implements ObjectBuilder<TimeValuePair>, ObjectSerializer<TimeValuePair> {
 
     @Override
-    public TimeValuePair createObject(QName name) throws ObjectBuildException {
+    public TimeValuePair createObject(QName name, XMLReader reader) throws ObjectBuildException, XMLReadException {
         return new TimeValuePair();
     }
 
